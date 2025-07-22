@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Nanite - Access the Best AI Tools—Completely Free</title>
+    <meta name="description" content="Say goodbye to endless subscriptions. Use the latest AI models like Claude, VEO, and more without paying a cent.">
+    
+    <!-- Mobile-specific meta tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Nanite">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    
+    <!-- Preconnect for performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+         <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@heroui/theme@latest/dist/index.css">
+     <script src="https://cdn.jsdelivr.net/npm/@heroui/core@latest/dist/index.js"></script>
+     <script>
+         tailwind.config = {
+             darkMode: false,
+             theme: {
+                 extend: {
+                     fontFamily: {
+                         sans: ['Work Sans', 'sans-serif'],
+                     },
+                 }
+             }
+         }
+     </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ <body>
+     <!-- Background Image -->
+     <div class="background-image"></div>
+     
+     <!-- Dark Mode Background Video -->
+     <video class="background-video" autoplay muted loop playsinline>
+         <source src="./media/bg.mp4" type="video/mp4">
+     </video>
+
+     <!-- Clean Header -->
+    <header class="header">
+        <div class="container full-width">
+            <nav class="nav">
+                <div class="logo" onclick="window.location.reload()" style="cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="148" height="30" viewBox="0 0 296 60" fill="none" class="logo-svg">
+                      <path d="M0 8.75098C0 1.78504 8.49704 -1.65495 13.375 3.33594L33.8301 24.2617C35.2463 25.711 36.039 27.6561 36.0391 29.6787V52.2373C36.039 56.5244 32.5504 59.9998 28.2471 60H7.79199C3.48861 59.9999 5.8552e-05 56.5245 0 52.2373V8.75098ZM67.208 0C71.5114 0.000115386 74.9999 3.47554 75 7.7627V51.249C75 58.215 66.503 61.655 61.625 56.6641L41.1699 35.7383C39.7537 34.289 38.961 32.3439 38.9609 30.3213V7.7627C38.961 3.47558 42.4496 0.000176802 46.7529 0H67.208ZM128.25 43.7812H128.375V12.4062H137.5V47.5938H120.75L114.188 16.2188H114.062V47.5938H105V12.4062H120.5L128.25 43.7812ZM175.118 47.5938H165.806L163.52 38.7812H151.807L149.556 47.5938H140.181L150.306 12.4062H164.618L175.118 47.5938ZM200.794 43.7812H200.919V12.4062H210.044V47.5938H193.294L186.731 16.2188H186.606V47.5938H177.544V12.4062H193.044L200.794 43.7812ZM233.287 19.8438H228.787V40.1562H233.287V47.5938H215.537V40.1562H220.1V19.8438H215.537V12.4062H233.287V19.8438ZM264.102 19.8438H254.539V47.5938H245.789V19.8438H236.289V12.4062H264.102V19.8438ZM294.789 19.8438H276.727V26.2812H290.164V33.2812H276.727V40.6562H295.477V47.5938H268.164V12.4062H294.789V19.8438ZM153.499 32.1562H161.801L157.618 16.0312L153.499 32.1562Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                
+                <!-- Dark Mode Toggle -->
+                <div class="dark-mode-toggle">
+                    <button class="toggle-btn" id="darkModeToggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                                 <div class="nav-actions">
+                     <!-- Header Waitlist Counter Pill -->
+                     <div class="waitlist-pill">
+                         <svg class="people-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                             <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                             <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                         </svg>
+                         <span class="waitlist-count" id="waitlistCount">0</span>
+                         <span class="waitlist-label">on waitlist</span>
+                     </div>
+                 </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-center">
+                
+                                 <!-- Badge -->
+                 <div class="hui-chip hui-chip-secondary hui-chip-variant-flat status-badge">
+                     <svg class="badge-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>
+                     <span class="badge-text">Join the waitlist to be the first to get access</span>
+                 </div>
+                
+                                 <!-- Main Headline -->
+                 <h1 class="main-headline" id="heroHeadline">
+                     <span class="word" data-delay="0">Simplify</span>
+                     <span class="word" data-delay="100">your</span>
+                     <span class="word" data-delay="200">AI</span>
+                     <span class="word" data-delay="300">stack</span>
+                     <span class="word" data-delay="400">and</span>
+                     <span class="word italic-text" data-delay="500">stop</span>
+                     <span class="word italic-text" data-delay="600">paying</span>
+                     <span class="word italic-text" data-delay="700">for</span>
+                     <span class="word italic-text" data-delay="800">it.</span>
+                 </h1>
+                
+                                 <!-- Subtitle -->
+                 <p class="subtitle">
+                     Nanite gives you <em>instant, free access</em> to top models like <em>Claude Sonnet 4, GPT-4o, and Gemini Pro</em>, with <em>zero subscriptions or setup required</em>.
+                 </p>
+                 
+                 <!-- Signup Form -->
+                 <div class="signup-section">
+                     <form class="signup-form" onsubmit="handleInlineSignup(event)">
+                         <div class="prompt-container">
+                             <div class="prompt-box">
+                                 <svg class="prompt-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                     <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                                 <input 
+                                     type="email" 
+                                     placeholder="Enter your email to join the waitlist" 
+                                     required 
+                                     class="prompt-input"
+                                     autocomplete="email"
+                                     autocapitalize="none"
+                                     autocorrect="off"
+                                     spellcheck="false"
+                                     inputmode="email"
+                                     id="emailInput"
+                                 >
+                                 <button 
+                                     type="submit" 
+                                     class="prompt-submit"
+                                 >
+                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="m5 12 7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                         <path d="m12 19 0-14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                     </svg>
+                                 </button>
+                             </div>
+                         </div>
+                     </form>
+                     
+
+                 </section>
+                 
+
+                 <!-- FAQ Section -->
+                 <section class="how-it-works-section page-section">
+                     <div class="section-header">
+                         <h2 class="section-title">Questions? We've got answers.</h2>
+                     </div>
+                     <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(0)">
+                                <span class="accordion-question">What is Nanite?</span>
+                                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Nanite is a free, unified platform that gives you access to the most powerful AI models like Claude Sonnet 4, GPT-4o, and Gemini Pro all in one place. With so many AI models out there, it's incredibly hard to know which one works best for your specific task. Nanite eliminates the guesswork by intelligently routing your requests to the optimal model, so you get the best results without needing to understand the technical differences between each AI.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(1)">
+                                <span class="accordion-question">How is it free?</span>
+                                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>You turn on Fuel (which is powered by Tari) which earns you fuel as you have it open and you can use this fuel to power your Nanite. Think of it like earning points just by having the app running.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(2)">
+                                <span class="accordion-question">Can I buy fuel if I want to?</span>
+                                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Absolutely! While you can earn fuel for free, we'll offer affordable fuel packs for power users who want unlimited access. Think premium features, not paywalls.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(3)">
+                                <span class="accordion-question">Which AI models do you support?</span>
+                                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>We support the latest from OpenAI (GPT-4o, GPT-4o mini), Anthropic (Claude Sonnet 4, Claude Haiku), Google (Gemini Pro, Gemini Flash), and more. Plus image generation with DALL-E 3 and Midjourney, video creation, and specialized tools for coding, writing, and analysis.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(4)">
+                                <span class="accordion-question">When is it coming out?</span>
+                                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>We're launching in September 2025! Join our waitlist to get early access, exclusive beta features, and be among the first to experience the future of AI tools.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="https://x.com/nanite_org" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                    </svg>
+                    <span class="social-text">Follow us</span>
+                </a>
+            </div>
+            <div class="footer-right">
+                <div class="availability-text">
+                    <span class="availability-label">Coming Summer 2025</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

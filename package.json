@@ -1,0 +1,30 @@
+{
+  "name": "nanite-landing-page",
+  "version": "1.0.0",
+  "description": "Nanite Landing Page with HeroUI",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "tailwindcss -i ./styles.css -o ./dist/output.css --watch",
+    "dev": "live-server --port=3000",
+    "build": "tailwindcss -i ./styles.css -o ./dist/output.css --minify"
+  },
+  "dependencies": {
+    "@heroui/react": "^2.4.8",
+    "@heroui/theme": "^2.2.11",
+    "framer-motion": "^12.23.6",
+    "motion": "^12.23.6",
+    "tailwindcss": "^3.4.15"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "keywords": [
+    "ai",
+    "nanite",
+    "landing-page",
+    "heroui",
+    "tailwind"
+  ],
+  "author": "Nanite Team",
+  "license": "MIT"
+}
