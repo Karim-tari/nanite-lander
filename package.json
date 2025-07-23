@@ -1,7 +1,7 @@
 {
-  "name": "nanite-landing-page",
+  "name": "freegpt-landing-page",
   "version": "1.0.0",
-  "description": "Nanite Landing Page with HeroUI",
+  "description": "FreeGPT Landing Page with HeroUI",
   "main": "index.html",
   "scripts": {
     "build-css": "tailwindcss -i ./styles.css -o ./dist/output.css --watch",
@@ -20,11 +20,11 @@
   },
   "keywords": [
     "ai",
-    "nanite",
+    "freegpt",
     "landing-page",
     "heroui",
     "tailwind"
   ],
-  "author": "Nanite Team",
+  "author": "FreeGPT Team",
   "license": "MIT"
 }

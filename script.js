@@ -207,8 +207,7 @@ document.addEventListener('DOMContentLoaded', function() {
         startWaitlistAnimation();
     }, 1000); // Start after 1 second delay
     
-    // Initialize scroll-based availability text fade
-    initializeAvailabilityFade();
+    // Availability text stays visible (no fade effect)
     
     // Initialize dark mode toggle
     initializeDarkMode();
@@ -220,14 +219,9 @@ function initializeDarkMode() {
     const darkModeToggle = document.getElementById('darkModeToggle');
     if (!darkModeToggle) return;
     
-    // Check for saved dark mode preference or default to light mode
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    // Set initial theme
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-        document.documentElement.classList.add('dark');
-    }
+    // Set dark mode as default
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
     
     // Toggle function
     function toggleDarkMode() {
@@ -269,54 +263,7 @@ function initializeDarkMode() {
 }
 
 
-// Scroll-based availability text fade effect
-function initializeAvailabilityFade() {
-    const availabilityText = document.querySelector('.availability-label');
-    if (!availabilityText) return;
-    
-    let isVisible = true;
-    let ticking = false;
-    
-    function updateAvailabilityVisibility() {
-        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
-        const shouldBeVisible = scrollY < 100; // Fade out after 100px scroll
-        
-        if (shouldBeVisible !== isVisible) {
-            isVisible = shouldBeVisible;
-            
-            if (isVisible) {
-                // Fade in when scrolling back to top
-                availabilityText.style.opacity = '1';
-                availabilityText.style.transform = 'translateY(0)';
-                availabilityText.style.transition = 'opacity 400ms ease-out, transform 400ms ease-out';
-            } else {
-                // Fade out when scrolling down
-                availabilityText.style.opacity = '0';
-                availabilityText.style.transform = 'translateY(-10px)';
-                availabilityText.style.transition = 'opacity 300ms ease-in, transform 300ms ease-in';
-            }
-        }
-        
-        ticking = false;
-    }
-    
-    function requestAvailabilityUpdate() {
-        if (!ticking) {
-            requestAnimationFrame(updateAvailabilityVisibility);
-            ticking = true;
-        }
-    }
-    
-    // Use passive event listener for better performance
-    window.addEventListener('scroll', requestAvailabilityUpdate, { passive: true });
-    
-    // Handle orientation change on mobile
-    if (isMobile) {
-        window.addEventListener('orientationchange', () => {
-            setTimeout(requestAvailabilityUpdate, 100);
-        });
-    }
-}
+// Availability text - no fade effect (always visible)
 
 // Mobile viewport handling for better UX
 function handleMobileViewport() {
